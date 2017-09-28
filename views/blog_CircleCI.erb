@@ -1,0 +1,48 @@
+<div class="bg-primary" id="blog">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <h2 class="section-heading">Welcome to My Blog</h2>
+        <hr class="light">             
+        <h3>Let's talk about Continuous Integration</h3>
+          <p class="text-faded">This week has been a successful week for me.  Coding although I have mentioned is very fun and I love it, it can  also be overwhelming.  Failure is always part of the job, but it also makes success feel so wonderful.  You just have to remember to keep moving forward.</p>
+          <br><br>
+          <p class="text-faded">With that being said  I was able to successfully set up Continuous Integration in Ruby.  Yay me!  Now you may be wondering, “Jen, why would I need to do this?” Well,  Continuous Integration allows you to test your repository every time you push to git.  No matter who is working on the project and no matter how many times you make a change and push, it will run your test and let you know if it has detected something that can potentially break your code.  I don't know about you, but if I can have something else run my test I have set up while working automatically.  It seems like one more thing I don't have to worry about (unless something breaks haha).</p>
+          <h3>So let's talk about setting up your account....</h3>
+          <p class="text-faded">I will be using <a target="_blank" href="https://circleci.com/" style="color: purple";>CircleCI</a> for my testing set up.  Sign up by allowing CircleCi to connect with your github account</p>
+          <img src="img/circleci.png">
+          <h3>Select Project > Add Project</h3>
+          <p class="text-faded">Click on the repository you would like to add from the list of repositories in your account.  Once you have selected the repo it will prompt you to select the Operating System, the Platform and the Language you are using</p>
+          <img src="img/ci_setup.png">
+          <p class="text-faded"> Now you will need to create a folder in your repository named .cicleci and add a file config.yml</p>
+          <h3>In your config.yml account add...</h3>
+          <img src="img/config_setup.png">
+          <h3>You will also need a config.ru file with the following code...</h3>
+          <div class="container">
+          <div class="row">
+            <div class="center_instructions">
+              <ol class="list">
+                <li>require './app.rb'</li>
+                <li>run Sinatra::Application</li>
+              </ol>        
+            </div>       
+          </div>
+        </div>
+        <h3>and finally and a Rakefile with the following code...</h3>
+        <img src="img/rakefile_setup.png">
+        <p class="text-faded"> Once all this has been set up push your changes to github and watch the build let you know you have <strong>SUCCESS!</strong></p>
+        <p class="text-faded"> Hope this helps. Talk to you soon :)</strong></p>
+        
+
+           
+            
+      </div>          
+    </div>
+  </div>
+
+    <div class="pages">
+      <a style="color:white;" href="/blog_continue_testing">Previous</a> |
+      <a style="color:white;" href="/blog_comming_soon">Next</a>
+      <div style="float: left; color: white;">2017 Copyright &copy; JenniferGrudi</div>        
+    </div>
+</div>  
