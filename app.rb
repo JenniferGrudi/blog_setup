@@ -11,3 +11,7 @@ end
 get '/blog_CircleCI' do
   erb :blog_CircleCI
 end
+
+get '/blog_coming_soon' do
+  erb :blog_coming_soon
+end  
